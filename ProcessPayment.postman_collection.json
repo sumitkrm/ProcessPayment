@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "b9f6fcd9-693a-4580-baa5-5e2e32698023",
+		"name": "ProcessPayment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CreditCardNumber\" : \"1234123412341234\",\r\n    \"CardHolder\" : \"sumit\",\r\n    \"ExpirationDate\" : \"19/09/22\",\r\n    \"SecurityCode\" : \"139\",\r\n    \"Amount\" : 23\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				},
+				"description": "URL to call ap :- http://127.0.0.1:5000/\r\nRequest method :- POST\r\nrequest :- {\r\n    \"CreditCardNumber\" : \"1234123412341234\",\r\n    \"CardHolder\" : \"sumit\",\r\n    \"ExpirationDate\" : \"19/09/22\",\r\n    \"SecurityCode\" : \"139\",\r\n    \"Amount\" : 23\r\n}"
+			},
+			"response": []
+		}
+	]
+}
